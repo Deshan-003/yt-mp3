@@ -1,0 +1,16 @@
+node_modules/
+dist/
+release/
+test-results/
+playwright-report/
+dist-electron/
+node_modules.pnpm-backup/
+
+.tool-downloads/
+resources/bin/*.exe
+
+# Local reports and leftovers from earlier tool setups.
+audit-report.json
+pnpm-workspace.yaml
+/public/
+/build/

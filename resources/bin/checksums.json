@@ -1,0 +1,18 @@
+[
+    {
+        "File":  "deno.exe",
+        "Hash":  "E020F3E232BD16E33768DEE528E5983349C962952051CED0A5D58AD42F5D9B33"
+    },
+    {
+        "File":  "ffmpeg.exe",
+        "Hash":  "3256173F3F8BFFD7DF12227C68ADF68025EDB1832273A9530688A7BB1ED8EDEC"
+    },
+    {
+        "File":  "ffprobe.exe",
+        "Hash":  "F0D36ECBBDD3BCFAC3EFA078C96C7271C2E68B3810595552AC3B7F17E9A65C52"
+    },
+    {
+        "File":  "yt-dlp.exe",
+        "Hash":  "66674953FE251B89F4D08C5F0E35E0728679BD67AB3D7D05C0562AF101DD3E7A"
+    }
+]

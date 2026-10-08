@@ -1,0 +1,76 @@
+.app-shell { min-height: 100dvh; display: flex; flex-direction: column; background: #0f1720; }
+.titlebar { height: 33px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding-left: 14px; color: var(--muted); font-size: 10px; -webkit-app-region: drag; }
+.titlebar > span { display: flex; align-items: center; gap: 7px; }
+.titlebar img { width: 19px; height: 19px; object-fit: contain; }
+.window-controls { display: flex; height: 100%; -webkit-app-region: no-drag; }
+.window-controls button { width: 45px; background: transparent; }
+.window-controls svg { width: 12px; height: 12px; }
+.window-controls button:hover { background: #ffffff0d; }
+.window-controls .close:hover { background: #c42b39; color: white; }
+main { width: 100%; max-width: 800px; padding: 20px 46px 16px; margin: auto; flex: 1; }
+.app-header { display: flex; gap: 12px; align-items: center; }
+.brand-logo { width: 55px; height: 48px; object-fit: contain; flex-shrink: 0; }
+h1 { font-size: 22px; font-weight: 650; letter-spacing: -.5px; }
+.app-header p { font-size: 11px; color: var(--muted); margin-top: 3px; }
+.preview-badge { margin-left: auto; border: 1px solid var(--border); border-radius: 5px; padding: 4px 7px; color: #b0bdcd; font-size: 8px; letter-spacing: 1px; }
+.steps { display: flex; align-items: center; gap: 14px; max-width: 380px; margin: 24px auto; color: #92a1b4; font-size: 10px; }
+.steps > span { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+.steps b { display: grid; place-items: center; width: 18px; height: 18px; background: #1e2c3d; border-radius: 50%; font-size: 9px; font-weight: 500; }
+.steps .active { color: #84beff; }
+.steps .active b { background: var(--accent); color: white; }
+.step-line { height: 1px; background: #263344; flex: 1; }
+.state-panel { animation: appear 150ms ease; }
+h2 { font-size: 20px; letter-spacing: -.4px; font-weight: 600; }
+.intro { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.entry label { display: block; margin: 20px 0 8px; font-size: 11px; font-weight: 600; color: #d7e1ed; }
+.url-field { height: 47px; display: flex; align-items: center; gap: 12px; padding: 6px 7px 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; color: #9eabbc; transition: border-color 150ms ease; }
+.url-field:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px #2388ff12; }
+.url-field.invalid { border-color: #ff4d57; }
+.url-field input { width: 100%; min-width: 0; background: transparent; border: 0; color: #fff; font-size: 12px; }
+.url-field input:focus-visible { outline: none; }
+.url-field input::placeholder { color: #8f9fb3; }
+.paste { padding: 8px 11px; background: #223145; border: 1px solid var(--border); border-radius: 5px; font-size: 11px; }
+.paste:hover { background: #2e415a; }
+.primary { height: 44px; border-radius: 8px; background: var(--accent); color: #fff; font-size: 12px; font-weight: 600; box-shadow: 0 3px 12px #0002; }
+.primary:hover:not(:disabled) { background: #1477ea; }
+.convert-button { width: 100%; position: relative; margin-top: 17px; }
+.cta-arrow { position: absolute; right: 17px; }
+.quality { display: flex; justify-content: center; gap: 7px; margin-top: 14px; color: #9eabbc; font-size: 10px; }
+.quality span { color: #d1deec; }
+.quality i, .track i { padding: 0 4px; color: #8196ad; }
+footer { min-height: 36px; display: flex; align-items: center; gap: 7px; border-top: 1px solid #ffffff0a; padding: 10px 24px; font-size: 9px; color: #a1b1c5; }
+footer > span:last-child { margin-left: auto; color: #92a1b4; }
+.status-dot { width: 5px; height: 5px; border-radius: 50%; background: #69b0ff; }
+.error { display: flex; align-items: center; gap: 6px; color: #ff8b92; font-size: 11px; line-height: 1.5; margin-top: 8px; }
+.state-title { display: flex; align-items: center; gap: 11px; margin-bottom: 16px; }
+.state-title h2 { font-size: 19px; }
+.state-title p { color: var(--muted); font-size: 11px; margin-top: 4px; }
+.state-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #2388ff18; color: #69b0ff; }
+.state-icon.success { background: #3ac77918; color: #3ac779; }
+.media-card { display: flex; align-items: center; gap: 14px; padding: 11px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); }
+.thumbnail { width: 102px; height: 69px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+.track { min-width: 0; }
+.track h3 { font-size: 12px; font-weight: 550; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.track p { font-size: 10px; color: var(--muted); margin: 6px 0 8px; }
+.format { font-size: 9px; color: #a6cfff; background: #2388ff12; padding: 3px 6px; border-radius: 4px; }
+.file-icon { color: #8196ad; margin-left: auto; }
+.metadata-placeholder { height: 93px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 10px; color: var(--muted); }
+.progress-label { display: flex; justify-content: space-between; margin: 20px 0 9px; font-size: 11px; color: #b0bdcd; }
+.progress-label b { color: #92c4ff; font-weight: 500; }
+.progress { height: 5px; background: #26374c; border-radius: 8px; overflow: hidden; }
+.progress > div { height: 100%; border-radius: 8px; background: var(--accent); transition: width 180ms linear; }
+.text-button { background: transparent; color: #b0bdcd; font-size: 10px; }
+.text-button:hover { color: white; }
+.cancel { display: flex; margin: 16px auto 0; padding: 5px 12px; }
+.result-actions { display: flex; gap: 10px; margin-top: 17px; }
+.result-actions .primary { flex: 1; }
+.secondary { border: 1px solid var(--border); background: var(--raised); border-radius: 8px; padding: 0 20px; font-size: 11px; color: #d9e3f0; }
+.secondary:hover:not(:disabled) { background: #26374c; }
+.save-hint { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 10px; color: var(--muted); font-size: 9px; }
+.notice { text-align: center; margin-top: 9px; color: #b3ceef; font-size: 10px; line-height: 1.4; }
+.spin { animation: spin 1.5s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes appear { from { opacity: .65; transform: translateY(2px); } to { opacity: 1; transform: translateY(0); } }
+@media (min-height: 600px) { main { flex: 0; } }
+@media (max-height: 470px) { main { padding-top: 10px; padding-bottom: 10px; } .steps { margin: 15px auto; } .state-title { margin-bottom: 12px; } }
+@media (max-width: 670px) { main { padding-left: 30px; padding-right: 30px; } .thumbnail { width: 90px; } }
